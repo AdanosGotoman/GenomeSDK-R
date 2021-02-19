@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VisualStudioProject
+	Name="GUI2"
+	ProjectGUID="{8CD94F60-C9B4-434B-ACA9-68C651310F24}"
+	ProjectType="Visual C++"
+	Version="8.00"
+	>
+	<Platforms>
+		<Platform Name="Win32"/>
+	</Platforms>
+	<Configurations>
+		<Configuration
+			Name="Debug|Win32"
+			ConfigurationType="4"
+			InheritedPropertySheets=".\RisenLibDebug.vsprops"
+			/>
+		<Configuration
+			Name="DebugCLR|Win32"
+			ConfigurationType="4"
+			InheritedPropertySheets=".\RisenLibDebugCLR.vsprops"
+			ManagedExtensions="1"
+			/>
+		<Configuration
+			Name="Release|Win32"
+			ConfigurationType="4"
+			InheritedPropertySheets=".\RisenLibRelease.vsprops"
+			WholeProgramOptimization="1"
+			/>
+		<Configuration
+			Name="ReleaseCLR|Win32"
+			ConfigurationType="4"
+			InheritedPropertySheets=".\RisenLibReleaseCLR.vsprops"
+			ManagedExtensions="1"
+			WholeProgramOptimization="1"
+			/>
+	</Configurations>
+	<Files>
+		<File RelativePath=".\GUI2.cpp"/>
+		<File RelativePath=".\GUI2.h"/>
+		<File RelativePath=".\GUI2\ff_guifont2.h"/>
+		<File RelativePath=".\GUI2\ff_modulegui2.h"/>
+	</Files>
+</VisualStudioProject>

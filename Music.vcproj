@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VisualStudioProject
+	Name="Music"
+	ProjectGUID="{5477D925-E130-4280-90ED-BDE7E7807884}"
+	ProjectType="Visual C++"
+	Version="8.00"
+	>
+	<Platforms>
+		<Platform Name="Win32"/>
+	</Platforms>
+	<Configurations>
+		<Configuration
+			Name="Debug|Win32"
+			ConfigurationType="4"
+			InheritedPropertySheets=".\RisenLibDebug.vsprops"
+			/>
+		<Configuration
+			Name="DebugCLR|Win32"
+			ConfigurationType="4"
+			InheritedPropertySheets=".\RisenLibDebugCLR.vsprops"
+			ManagedExtensions="1"
+			/>
+		<Configuration
+			Name="Release|Win32"
+			ConfigurationType="4"
+			InheritedPropertySheets=".\RisenLibRelease.vsprops"
+			WholeProgramOptimization="1"
+			/>
+		<Configuration
+			Name="ReleaseCLR|Win32"
+			ConfigurationType="4"
+			InheritedPropertySheets=".\RisenLibReleaseCLR.vsprops"
+			ManagedExtensions="1"
+			WholeProgramOptimization="1"
+			/>
+	</Configurations>
+	<Files>
+		<File RelativePath=".\Music.cpp"/>
+		<File RelativePath=".\Music.h"/>
+		<File RelativePath=".\Music\ff_modulemusic.h"/>
+	</Files>
+</VisualStudioProject>

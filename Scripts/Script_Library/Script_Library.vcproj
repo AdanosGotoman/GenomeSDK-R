@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VisualStudioProject
+	Name="Script_Library"
+	ProjectGUID="{21075445-5D68-43EF-A17F-5FDEB7EAEC63}"
+	ProjectType="Visual C++"
+	Version="8.00"
+	>
+	<Platforms>
+		<Platform Name="Win32"/>
+	</Platforms>
+	<Configurations>
+		<Configuration
+			Name="Debug|Win32"
+			ConfigurationType="2"
+			InheritedPropertySheets="..\..\RisenScriptsDebug.vsprops"
+			/>
+		<Configuration
+			Name="Release|Win32"
+			ConfigurationType="2"
+			InheritedPropertySheets="..\..\RisenScriptsRelease.vsprops"
+			WholeProgramOptimization="1"
+			/>
+	</Configurations>
+	<Files>
+		<File RelativePath=".\Script_Library.cpp"/>
+		<File RelativePath=".\Script_Library.rc"/>
+	</Files>
+</VisualStudioProject>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VisualStudioProject
+	Name="Importer"
+	ProjectGUID="{CB92AD57-168E-432D-8ADB-C01471CE7979}"
+	ProjectType="Visual C++"
+	Version="8.00"
+	>
+	<Platforms>
+		<Platform Name="Win32"/>
+	</Platforms>
+	<Configurations>
+		<Configuration
+			Name="Debug|Win32"
+			ConfigurationType="4"
+			InheritedPropertySheets=".\RisenLibDebug.vsprops"
+			/>
+		<Configuration
+			Name="DebugCLR|Win32"
+			ConfigurationType="4"
+			InheritedPropertySheets=".\RisenLibDebugCLR.vsprops"
+			ManagedExtensions="1"
+			/>
+		<Configuration
+			Name="Release|Win32"
+			ConfigurationType="4"
+			InheritedPropertySheets=".\RisenLibRelease.vsprops"
+			WholeProgramOptimization="1"
+			/>
+		<Configuration
+			Name="ReleaseCLR|Win32"
+			ConfigurationType="4"
+			InheritedPropertySheets=".\RisenLibReleaseCLR.vsprops"
+			ManagedExtensions="1"
+			WholeProgramOptimization="1"
+			/>
+	</Configurations>
+	<Files>
+		<File RelativePath=".\Importer.cpp"/>
+		<File RelativePath=".\Importer.h"/>
+		<File RelativePath=".\Importer\ge_democompiler.h"/>
+		<File RelativePath=".\Importer\ge_importeradmin.h"/>
+		<File RelativePath=".\Importer\ge_meshimporter.h"/>
+		<File RelativePath=".\Importer\ge_resourcecompiler.h"/>
+		<File RelativePath=".\Importer\ge_scenecompiler.h"/>
+		<File RelativePath=".\Importer\ge_texturebaker.h"/>
+	</Files>
+</VisualStudioProject>

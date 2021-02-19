@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VisualStudioProject
+	Name="FFC"
+	ProjectGUID="{DE989E2A-0B58-4F0C-AC11-A833FB142B2C}"
+	ProjectType="Visual C++"
+	Version="8.00"
+	>
+	<Platforms>
+		<Platform Name="Win32"/>
+	</Platforms>
+	<Configurations>
+		<Configuration
+			Name="Debug|Win32"
+			ConfigurationType="4"
+			InheritedPropertySheets=".\RisenLibDebug.vsprops"
+			/>
+		<Configuration
+			Name="DebugCLR|Win32"
+			ConfigurationType="4"
+			InheritedPropertySheets=".\RisenLibDebugCLR.vsprops"
+			ManagedExtensions="1"
+			/>
+		<Configuration
+			Name="Release|Win32"
+			ConfigurationType="4"
+			InheritedPropertySheets=".\RisenLibRelease.vsprops"
+			WholeProgramOptimization="1"
+			/>
+		<Configuration
+			Name="ReleaseCLR|Win32"
+			ConfigurationType="4"
+			InheritedPropertySheets=".\RisenLibReleaseCLR.vsprops"
+			ManagedExtensions="1"
+			WholeProgramOptimization="1"
+			/>
+	</Configurations>
+	<Files>
+		<Filter Name="io">
+			<Filter Name="physical">
+				<File RelativePath=".\FFC\fx_physicalfile.h"/>
+				<File RelativePath=".\FFC\fx_physicalfilefind.h"/>
+				<File RelativePath=".\FFC\fx_physicalfilemapping.h"/>
+				<File RelativePath=".\FFC\fx_physicalfilestream.h"/>
+				<File RelativePath=".\FFC\fx_physicalfilesystem.h"/>
+			</Filter>
+			<Filter Name="virtual">
+				<File RelativePath=".\FFC\fx_virtualfile.h"/>
+				<File RelativePath=".\FFC\fx_virtualfilemapping.h"/>
+				<File RelativePath=".\FFC\fx_virtualfilestream.h"/>
+			</Filter>
+			<File RelativePath=".\FFC\fx_iostatistics.h"/>
+			<File RelativePath=".\FFC\fx_iostream.h"/>
+		</Filter>
+		<Filter Name="loc">
+			<File RelativePath=".\FFC\fx_locstring.h"/>
+			<File RelativePath=".\FFC\fx_locstringex.h"/>
+			<File RelativePath=".\FFC\fx_loctable.h"/>
+			<File RelativePath=".\FFC\fx_table.h"/>
+			<File RelativePath=".\FFC\fx_tablecolumn.h"/>
+			<File RelativePath=".\FFC\fx_tablediff.h"/>
+			<File RelativePath=".\FFC\fx_tableitem.h"/>
+			<File RelativePath=".\FFC\fx_tableitemproxy.h"/>
+			<File RelativePath=".\FFC\fx_tablemap.h"/>
+			<File RelativePath=".\FFC\fx_tablemapitem.h"/>
+		</Filter>
+		<File RelativePath=".\FFC.cpp"/>
+		<File RelativePath=".\FFC.h"/>
+	</Files>
+</VisualStudioProject>

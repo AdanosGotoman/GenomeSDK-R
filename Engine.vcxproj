@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugCLR|Win32">
+      <Configuration>DebugCLR</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseCLR|Win32">
+      <Configuration>ReleaseCLR</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{92C8B6A4-3E64-4D3E-B79C-9C5C32F95E46}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseCLR|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugCLR|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseCLR|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="RisenLibReleaseCLR.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="RisenLibRelease.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugCLR|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="RisenLibDebugCLR.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="RisenLibDebug.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>16.0.30804.86</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseCLR|Win32'">
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugCLR|Win32'">
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Engine.h" />
+    <ClInclude Include="EngineManifestDependency.h" />
+    <ClInclude Include="Engine\EngineEnum.h" />
+    <ClInclude Include="Engine\ge_actorattachment.h" />
+    <ClInclude Include="Engine\ge_actorwrapper.h" />
+    <ClInclude Include="Engine\ge_animation_ps.h" />
+    <ClInclude Include="Engine\ge_animshared.h" />
+    <ClInclude Include="Engine\ge_apitexture.h" />
+    <ClInclude Include="Engine\ge_application.h" />
+    <ClInclude Include="Engine\ge_archivefile.h" />
+    <ClInclude Include="Engine\ge_archivemanager.h" />
+    <ClInclude Include="Engine\ge_area_stringproperty_ps.h" />
+    <ClInclude Include="Engine\ge_camerabase.h" />
+    <ClInclude Include="Engine\ge_collisionshape.h" />
+    <ClInclude Include="Engine\ge_collisionshapebase_ps.h" />
+    <ClInclude Include="Engine\ge_collisionshape_ps.h" />
+    <ClInclude Include="Engine\ge_configadmin.h" />
+    <ClInclude Include="Engine\ge_configfile.h" />
+    <ClInclude Include="Engine\ge_console2.h" />
+    <ClInclude Include="Engine\ge_contextbase.h" />
+    <ClInclude Include="Engine\ge_debugoptions.h" />
+    <ClInclude Include="Engine\ge_docarchive.h" />
+    <ClInclude Include="Engine\ge_docobject.h" />
+    <ClInclude Include="Engine\ge_docobjectmap.h" />
+    <ClInclude Include="Engine\ge_dynamicentity.h" />
+    <ClInclude Include="Engine\ge_effectmodulebase.h" />
+    <ClInclude Include="Engine\ge_effectsystembase.h" />
+    <ClInclude Include="Engine\ge_enginecomponentbase.h" />
+    <ClInclude Include="Engine\ge_entity.h" />
+    <ClInclude Include="Engine\ge_entityadmin.h" />
+    <ClInclude Include="Engine\ge_entitydynamiccontext.h" />
+    <ClInclude Include="Engine\ge_entitypropertyset.h" />
+    <ClInclude Include="Engine\ge_entityproxy.h" />
+    <ClInclude Include="Engine\ge_entitystringproxy.h" />
+    <ClInclude Include="Engine\ge_frustumelementitem.h" />
+    <ClInclude Include="Engine\ge_geometryentity.h" />
+    <ClInclude Include="Engine\ge_gfximagedata.h" />
+    <ClInclude Include="Engine\ge_gfxobject.h" />
+    <ClInclude Include="Engine\ge_gfxshared.h" />
+    <ClInclude Include="Engine\ge_gizmobase.h" />
+    <ClInclude Include="Engine\ge_gizmotransform.h" />
+    <ClInclude Include="Engine\ge_gizmotransformcapsule.h" />
+    <ClInclude Include="Engine\ge_gizmotransformcapsulecollisionshape.h" />
+    <ClInclude Include="Engine\ge_gizmotransformobb.h" />
+    <ClInclude Include="Engine\ge_gizmotransformobbcollisionshape.h" />
+    <ClInclude Include="Engine\ge_gizmotransformsphere.h" />
+    <ClInclude Include="Engine\ge_gizmotransformspherecollisionshape.h" />
+    <ClInclude Include="Engine\ge_gizmotranslateandscale.h" />
+    <ClInclude Include="Engine\ge_gizmotranslateandscalebox.h" />
+    <ClInclude Include="Engine\ge_gizmotranslateandscalesphere.h" />
+    <ClInclude Include="Engine\ge_guiresource2.h" />
+    <ClInclude Include="Engine\ge_inputadmin.h" />
+    <ClInclude Include="Engine\ge_iteratorprimitive.h" />
+    <ClInclude Include="Engine\ge_locadmin2.h" />
+    <ClInclude Include="Engine\ge_locstring.h" />
+    <ClInclude Include="Engine\ge_messagehandler.h" />
+    <ClInclude Include="Engine\ge_moduleadmin.h" />
+    <ClInclude Include="Engine\ge_moveranimationbase.h" />
+    <ClInclude Include="Engine\ge_moveranimationfile.h" />
+    <ClInclude Include="Engine\ge_moveranimationrotate.h" />
+    <ClInclude Include="Engine\ge_moveranimationskeletal.h" />
+    <ClInclude Include="Engine\ge_mover_ps.h" />
+    <ClInclude Include="Engine\ge_node.h" />
+    <ClInclude Include="Engine\ge_particle_ps.h" />
+    <ClInclude Include="Engine\ge_portal.h" />
+    <ClInclude Include="Engine\ge_portalbsp.h" />
+    <ClInclude Include="Engine\ge_portalcell_ps.h" />
+    <ClInclude Include="Engine\ge_portalroom_ps.h" />
+    <ClInclude Include="Engine\ge_processible.h" />
+    <ClInclude Include="Engine\ge_processibleelement.h" />
+    <ClInclude Include="Engine\ge_processor.h" />
+    <ClInclude Include="Engine\ge_psmap.h" />
+    <ClInclude Include="Engine\ge_resource2.h" />
+    <ClInclude Include="Engine\ge_resourcecache2.h" />
+    <ClInclude Include="Engine\ge_resourceinputstream2.h" />
+    <ClInclude Include="Engine\ge_resourcemodule2.h" />
+    <ClInclude Include="Engine\ge_resourceoutputstream2.h" />
+    <ClInclude Include="Engine\ge_rigidbodybase_ps.h" />
+    <ClInclude Include="Engine\ge_rigidbody_ps.h" />
+    <ClInclude Include="Engine\ge_scriptadminbase.h" />
+    <ClInclude Include="Engine\ge_scriptfunctionmap.h" />
+    <ClInclude Include="Engine\ge_scriptproxy.h" />
+    <ClInclude Include="Engine\ge_scriptproxyscript.h" />
+    <ClInclude Include="Engine\ge_splash.h" />
+    <ClInclude Include="Engine\ge_statistic.h" />
+    <ClInclude Include="Engine\ge_statisticview.h" />
+    <ClInclude Include="Engine\ge_strip_ps.h" />
+    <ClInclude Include="Engine\ge_templateentity.h" />
+    <ClInclude Include="Engine\ge_templateentityproxy.h" />
+    <ClInclude Include="Engine\ge_virtualfilesystem.h" />
+    <ClInclude Include="Engine\ge_window.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Engine\ge_docarchive.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Engine\ge_moduleadmin.inl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="FFC.vcxproj">
+      <Project>{de989e2a-0b58-4f0c-ac11-a833fb142b2c}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="FFCore.vcxproj">
+      <Project>{3c763629-4c39-4507-ab6d-38b80780c857}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="FileSystem2.vcxproj">
+      <Project>{2c7005b8-6b02-4104-bc98-e3a8372dfeeb}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="GUI2.vcxproj">
+      <Project>{8cd94f60-c9b4-434b-aca9-68c651310f24}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="SharedBase.vcxproj">
+      <Project>{f385328b-69b2-4e58-b520-9562efd53ad8}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

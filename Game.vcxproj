@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugCLR|Win32">
+      <Configuration>DebugCLR</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseCLR|Win32">
+      <Configuration>ReleaseCLR</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3388FF8A-25A4-4378-A870-824C174F3982}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseCLR|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugCLR|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseCLR|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="RisenLibReleaseCLR.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="RisenLibRelease.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugCLR|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="RisenLibDebugCLR.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="RisenLibDebug.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>16.0.30804.86</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseCLR|Win32'">
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugCLR|Win32'">
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="Game\ge_actionadmin.h" />
+    <ClInclude Include="Game\ge_aizone_ps.h" />
+    <ClInclude Include="Game\ge_anchor_ps.h" />
+    <ClInclude Include="Game\ge_arena_ps.h" />
+    <ClInclude Include="Game\ge_book_ps.h" />
+    <ClInclude Include="Game\ge_castinfo_ps.h" />
+    <ClInclude Include="Game\ge_charactermovement_ps.h" />
+    <ClInclude Include="Game\ge_clock_ps.h" />
+    <ClInclude Include="Game\ge_collisioncircle_ps.h" />
+    <ClInclude Include="Game\ge_collisioncircle_psobj.h" />
+    <ClInclude Include="Game\ge_combatadmin.h" />
+    <ClInclude Include="Game\ge_combatai.h" />
+    <ClInclude Include="Game\ge_combataimelee.h" />
+    <ClInclude Include="Game\ge_combatairanged.h" />
+    <ClInclude Include="Game\ge_combatmove.h" />
+    <ClInclude Include="Game\ge_combatmoveaim.h" />
+    <ClInclude Include="Game\ge_combatmovecomboswitch.h" />
+    <ClInclude Include="Game\ge_combatmovefinishing.h" />
+    <ClInclude Include="Game\ge_combatmovemelee.h" />
+    <ClInclude Include="Game\ge_combatmoveoverlaystumble.h" />
+    <ClInclude Include="Game\ge_combatmoveparade.h" />
+    <ClInclude Include="Game\ge_combatmovereload.h" />
+    <ClInclude Include="Game\ge_combatmovescriptstate.h" />
+    <ClInclude Include="Game\ge_combatmoveshoot.h" />
+    <ClInclude Include="Game\ge_combatmovestumble.h" />
+    <ClInclude Include="Game\ge_combatobject.h" />
+    <ClInclude Include="Game\ge_combatspecies.h" />
+    <ClInclude Include="Game\ge_combatstyle.h" />
+    <ClInclude Include="Game\ge_combatstyleanipose.h" />
+    <ClInclude Include="Game\ge_combatstylemelee.h" />
+    <ClInclude Include="Game\ge_combatstyleranged.h" />
+    <ClInclude Include="Game\ge_combatstyleweaponconfig.h" />
+    <ClInclude Include="Game\ge_combatsystem_ps.h" />
+    <ClInclude Include="Game\ge_combatweaponconfig.h" />
+    <ClInclude Include="Game\ge_craftingredient.h" />
+    <ClInclude Include="Game\ge_damage_ps.h" />
+    <ClInclude Include="Game\ge_database.h" />
+    <ClInclude Include="Game\ge_dialog_ps.h" />
+    <ClInclude Include="Game\ge_door_ps.h" />
+    <ClInclude Include="Game\ge_dynamiccollisioncircle_ps.h" />
+    <ClInclude Include="Game\ge_dynamiclayer.h" />
+    <ClInclude Include="Game\ge_effect.h" />
+    <ClInclude Include="Game\ge_effectcommand.h" />
+    <ClInclude Include="Game\ge_effectcommandearthquake.h" />
+    <ClInclude Include="Game\ge_effectcommandentity.h" />
+    <ClInclude Include="Game\ge_effectcommandkillentity.h" />
+    <ClInclude Include="Game\ge_effectcommandkillentityrange.h" />
+    <ClInclude Include="Game\ge_effectcommandmodifyentity.h" />
+    <ClInclude Include="Game\ge_effectcommandplaysound.h" />
+    <ClInclude Include="Game\ge_effectcommandplayvoice.h" />
+    <ClInclude Include="Game\ge_effectcommandrunscript.h" />
+    <ClInclude Include="Game\ge_effectcommandsaysvm.h" />
+    <ClInclude Include="Game\ge_effectcommandsequence2.h" />
+    <ClInclude Include="Game\ge_effectcommandspawnentity.h" />
+    <ClInclude Include="Game\ge_effectcommandspawnentitylist.h" />
+    <ClInclude Include="Game\ge_effectcommandspawnentityswitch.h" />
+    <ClInclude Include="Game\ge_effectcommandstartimageeffect.h" />
+    <ClInclude Include="Game\ge_effectcommandtriggerentity.h" />
+    <ClInclude Include="Game\ge_effectmodule.h" />
+    <ClInclude Include="Game\ge_effectsystem.h" />
+    <ClInclude Include="Game\ge_effect_ps.h" />
+    <ClInclude Include="Game\ge_flightpathballistic.h" />
+    <ClInclude Include="Game\ge_flightpathbase.h" />
+    <ClInclude Include="Game\ge_flightpathseeking.h" />
+    <ClInclude Include="Game\ge_gameapp.h" />
+    <ClInclude Include="Game\ge_info.h" />
+    <ClInclude Include="Game\ge_infocommand.h" />
+    <ClInclude Include="Game\ge_infocommandaddinfosystemendscript.h" />
+    <ClInclude Include="Game\ge_infocommandaddlogtext.h" />
+    <ClInclude Include="Game\ge_infocommandaddnpcinfo.h" />
+    <ClInclude Include="Game\ge_infocommandaddquestactor.h" />
+    <ClInclude Include="Game\ge_infocommandattack.h" />
+    <ClInclude Include="Game\ge_infocommandback.h" />
+    <ClInclude Include="Game\ge_infocommandboostattribs.h" />
+    <ClInclude Include="Game\ge_infocommandcleargameevent.h" />
+    <ClInclude Include="Game\ge_infocommandclosequest.h" />
+    <ClInclude Include="Game\ge_infocommandcreateitem.h" />
+    <ClInclude Include="Game\ge_infocommanddescription.h" />
+    <ClInclude Include="Game\ge_infocommanddestroyitem.h" />
+    <ClInclude Include="Game\ge_infocommanddoloot.h" />
+    <ClInclude Include="Game\ge_infocommanddotrade.h" />
+    <ClInclude Include="Game\ge_infocommandend.h" />
+    <ClInclude Include="Game\ge_infocommandendgame.h" />
+    <ClInclude Include="Game\ge_infocommandfullstop.h" />
+    <ClInclude Include="Game\ge_infocommandgive.h" />
+    <ClInclude Include="Game\ge_infocommandgivexp.h" />
+    <ClInclude Include="Game\ge_infocommandheal.h" />
+    <ClInclude Include="Game\ge_infocommandinfowait.h" />
+    <ClInclude Include="Game\ge_infocommandkillnpc.h" />
+    <ClInclude Include="Game\ge_infocommandmoveto.h" />
+    <ClInclude Include="Game\ge_infocommandpickpocket.h" />
+    <ClInclude Include="Game\ge_infocommandplaymusic.h" />
+    <ClInclude Include="Game\ge_infocommandremovenpc.h" />
+    <ClInclude Include="Game\ge_infocommandremovenpcinfo.h" />
+    <ClInclude Include="Game\ge_infocommandremovequestactor.h" />
+    <ClInclude Include="Game\ge_infocommandrunaiscript.h" />
+    <ClInclude Include="Game\ge_infocommandruninfo.h" />
+    <ClInclude Include="Game\ge_infocommandrunquest.h" />
+    <ClInclude Include="Game\ge_infocommandrunscript.h" />
+    <ClInclude Include="Game\ge_infocommandsay.h" />
+    <ClInclude Include="Game\ge_infocommandsayconfirm.h" />
+    <ClInclude Include="Game\ge_infocommandsayholdingposition.h" />
+    <ClInclude Include="Game\ge_infocommandsaykeepitup.h" />
+    <ClInclude Include="Game\ge_infocommandsaysound.h" />
+    <ClInclude Include="Game\ge_infocommandsaysvm.h" />
+    <ClInclude Include="Game\ge_infocommandsetgameevent.h" />
+    <ClInclude Include="Game\ge_infocommandsetguardstatus.h" />
+    <ClInclude Include="Game\ge_infocommandsetmobenabled.h" />
+    <ClInclude Include="Game\ge_infocommandsetpartyenabled.h" />
+    <ClInclude Include="Game\ge_infocommandsetrelaxingpoint.h" />
+    <ClInclude Include="Game\ge_infocommandsetroutine.h" />
+    <ClInclude Include="Game\ge_infocommandsetsectorstatus.h" />
+    <ClInclude Include="Game\ge_infocommandsetslaveryenabled.h" />
+    <ClInclude Include="Game\ge_infocommandsetsleepingpoint.h" />
+    <ClInclude Include="Game\ge_infocommandsetteachenabled.h" />
+    <ClInclude Include="Game\ge_infocommandsettradeenabled.h" />
+    <ClInclude Include="Game\ge_infocommandsetworkingpoint.h" />
+    <ClInclude Include="Game\ge_infocommandshowpicture.h" />
+    <ClInclude Include="Game\ge_infocommandshowsubtitle.h" />
+    <ClInclude Include="Game\ge_infocommandsleep.h" />
+    <ClInclude Include="Game\ge_infocommandstarteffect.h" />
+    <ClInclude Include="Game\ge_infocommandstartfixcamera.h" />
+    <ClInclude Include="Game\ge_infocommandstarttutorial.h" />
+    <ClInclude Include="Game\ge_infocommandstopfixcamera.h" />
+    <ClInclude Include="Game\ge_infocommandsucceedquest.h" />
+    <ClInclude Include="Game\ge_infocommandteach.h" />
+    <ClInclude Include="Game\ge_infocommandteleportnpc.h" />
+    <ClInclude Include="Game\ge_infocommandthink.h" />
+    <ClInclude Include="Game\ge_infocommandtrigger.h" />
+    <ClInclude Include="Game\ge_infocommanduse.h" />
+    <ClInclude Include="Game\ge_infocommandwear.h" />
+    <ClInclude Include="Game\ge_infocondition.h" />
+    <ClInclude Include="Game\ge_infoconditioncanteachskill.h" />
+    <ClInclude Include="Game\ge_infoconditionitemamount.h" />
+    <ClInclude Include="Game\ge_infoconditionnpcstatus.h" />
+    <ClInclude Include="Game\ge_infoconditionownerinarea.h" />
+    <ClInclude Include="Game\ge_infoconditionownernearentity.h" />
+    <ClInclude Include="Game\ge_infoconditionplayerknows.h" />
+    <ClInclude Include="Game\ge_infoconditionplayernotknows.h" />
+    <ClInclude Include="Game\ge_infoconditionqueststatus.h" />
+    <ClInclude Include="Game\ge_infoconditionscript.h" />
+    <ClInclude Include="Game\ge_infoconditionskillvalue.h" />
+    <ClInclude Include="Game\ge_infoconditionteachenabled.h" />
+    <ClInclude Include="Game\ge_infolocstring.h" />
+    <ClInclude Include="Game\ge_infomodule.h" />
+    <ClInclude Include="Game\ge_infosystem.h" />
+    <ClInclude Include="Game\ge_interaction.h" />
+    <ClInclude Include="Game\ge_interactionadmin.h" />
+    <ClInclude Include="Game\ge_interactionslot.h" />
+    <ClInclude Include="Game\ge_interaction_ps.h" />
+    <ClInclude Include="Game\ge_inventorylistener.h" />
+    <ClInclude Include="Game\ge_inventoryslot.h" />
+    <ClInclude Include="Game\ge_inventorystack.h" />
+    <ClInclude Include="Game\ge_inventory_ps.h" />
+    <ClInclude Include="Game\ge_item_ps.h" />
+    <ClInclude Include="Game\ge_layerbase.h" />
+    <ClInclude Include="Game\ge_letterlocstring.h" />
+    <ClInclude Include="Game\ge_letter_ps.h" />
+    <ClInclude Include="Game\ge_lock_ps.h" />
+    <ClInclude Include="Game\ge_mapentry.h" />
+    <ClInclude Include="Game\ge_mapinfo_ps.h" />
+    <ClInclude Include="Game\ge_maplocstring.h" />
+    <ClInclude Include="Game\ge_map_ps.h" />
+    <ClInclude Include="Game\ge_modifyskill.h" />
+    <ClInclude Include="Game\ge_navigation_ps.h" />
+    <ClInclude Include="Game\ge_navpath_ps.h" />
+    <ClInclude Include="Game\ge_navzone_ps.h" />
+    <ClInclude Include="Game\ge_negzone_ps.h" />
+    <ClInclude Include="Game\ge_negzone_psobj.h" />
+    <ClInclude Include="Game\ge_npcinfolocstring.h" />
+    <ClInclude Include="Game\ge_npc_ps.h" />
+    <ClInclude Include="Game\ge_partyadmin.h" />
+    <ClInclude Include="Game\ge_party_ps.h" />
+    <ClInclude Include="Game\ge_prefpath_ps.h" />
+    <ClInclude Include="Game\ge_prefpath_psobj.h" />
+    <ClInclude Include="Game\ge_project.h" />
+    <ClInclude Include="Game\ge_projectile2_ps.h" />
+    <ClInclude Include="Game\ge_quest.h" />
+    <ClInclude Include="Game\ge_questactor.h" />
+    <ClInclude Include="Game\ge_questlocstring.h" />
+    <ClInclude Include="Game\ge_questmanager.h" />
+    <ClInclude Include="Game\ge_recipe_ps.h" />
+    <ClInclude Include="Game\ge_runtimeinfo.h" />
+    <ClInclude Include="Game\ge_scriptadmin.h" />
+    <ClInclude Include="Game\ge_scriptargs.h" />
+    <ClInclude Include="Game\ge_scriptinit.h" />
+    <ClInclude Include="Game\ge_scriptprocessingunit.h" />
+    <ClInclude Include="Game\ge_scriptproxyaicallback.h" />
+    <ClInclude Include="Game\ge_scriptproxyaifunction.h" />
+    <ClInclude Include="Game\ge_scriptproxyaistate.h" />
+    <ClInclude Include="Game\ge_scriptroutine_ps.h" />
+    <ClInclude Include="Game\ge_sector.h" />
+    <ClInclude Include="Game\ge_session.h" />
+    <ClInclude Include="Game\ge_sessioncheats.h" />
+    <ClInclude Include="Game\ge_sessioninfo.h" />
+    <ClInclude Include="Game\ge_skillrange.h" />
+    <ClInclude Include="Game\ge_skills_ps.h" />
+    <ClInclude Include="Game\ge_skillvalue.h" />
+    <ClInclude Include="Game\ge_skillvaluebase.h" />
+    <ClInclude Include="Game\ge_stategraphaction.h" />
+    <ClInclude Include="Game\ge_stategraphactioncallscript.h" />
+    <ClInclude Include="Game\ge_stategraphactioneventdispatcher.h" />
+    <ClInclude Include="Game\ge_stategraphactionfollowstate.h" />
+    <ClInclude Include="Game\ge_stategraphactionpauseani.h" />
+    <ClInclude Include="Game\ge_stategraphactionplayani.h" />
+    <ClInclude Include="Game\ge_stategraphactionstarteffect.h" />
+    <ClInclude Include="Game\ge_stategraphactionstop.h" />
+    <ClInclude Include="Game\ge_stategraphactiontrigger.h" />
+    <ClInclude Include="Game\ge_stategraphactiontriggerstate.h" />
+    <ClInclude Include="Game\ge_stategraphactionuntrigger.h" />
+    <ClInclude Include="Game\ge_stategraphactionvisibility.h" />
+    <ClInclude Include="Game\ge_stategraphactionwait.h" />
+    <ClInclude Include="Game\ge_stategrapheventfilter.h" />
+    <ClInclude Include="Game\ge_stategrapheventfiltercollisionshape.h" />
+    <ClInclude Include="Game\ge_stategrapheventfilterdamageamount.h" />
+    <ClInclude Include="Game\ge_stategrapheventfilterisentity.h" />
+    <ClInclude Include="Game\ge_stategrapheventfilterisnpc.h" />
+    <ClInclude Include="Game\ge_stategrapheventfilterisplayer.h" />
+    <ClInclude Include="Game\ge_stategrapheventfilterscript.h" />
+    <ClInclude Include="Game\ge_stategrapheventfiltertemplate.h" />
+    <ClInclude Include="Game\ge_stategraphstate.h" />
+    <ClInclude Include="Game\ge_stategraphtransition.h" />
+    <ClInclude Include="Game\ge_stategraph_ps.h" />
+    <ClInclude Include="Game\ge_workspace.h" />
+    <ClInclude Include="Game\ge_world.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Game\ge_scriptadmin.cpp" />
+    <ClCompile Include="Game\ge_scriptargs.cpp" />
+    <ClCompile Include="Game\ge_scriptinit.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Engine.vcxproj">
+      <Project>{92c8b6a4-3e64-4d3e-b79c-9c5c32f95e46}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="FFC.vcxproj">
+      <Project>{de989e2a-0b58-4f0c-ac11-a833fb142b2c}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="FFCore.vcxproj">
+      <Project>{3c763629-4c39-4507-ab6d-38b80780c857}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="FileSystem2.vcxproj">
+      <Project>{2c7005b8-6b02-4104-bc98-e3a8372dfeeb}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="GUI2.vcxproj">
+      <Project>{8cd94f60-c9b4-434b-aca9-68c651310f24}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="Music.vcxproj">
+      <Project>{5477d925-e130-4280-90ed-bde7e7807884}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="SharedBase.vcxproj">
+      <Project>{f385328b-69b2-4e58-b520-9562efd53ad8}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

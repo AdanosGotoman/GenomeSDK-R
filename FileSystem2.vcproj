@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VisualStudioProject
+	Name="FileSystem2"
+	ProjectGUID="{2C7005B8-6B02-4104-BC98-E3A8372DFEEB}"
+	ProjectType="Visual C++"
+	Version="8.00"
+	>
+	<Platforms>
+		<Platform Name="Win32"/>
+	</Platforms>
+	<Configurations>
+		<Configuration
+			Name="Debug|Win32"
+			ConfigurationType="4"
+			InheritedPropertySheets=".\RisenLibDebug.vsprops"
+			/>
+		<Configuration
+			Name="DebugCLR|Win32"
+			ConfigurationType="4"
+			InheritedPropertySheets=".\RisenLibDebugCLR.vsprops"
+			ManagedExtensions="1"
+			/>
+		<Configuration
+			Name="Release|Win32"
+			ConfigurationType="4"
+			InheritedPropertySheets=".\RisenLibRelease.vsprops"
+			WholeProgramOptimization="1"
+			/>
+		<Configuration
+			Name="ReleaseCLR|Win32"
+			ConfigurationType="4"
+			InheritedPropertySheets=".\RisenLibReleaseCLR.vsprops"
+			ManagedExtensions="1"
+			WholeProgramOptimization="1"
+			/>
+	</Configurations>
+	<Files>
+		<File RelativePath=".\FileSystem2.cpp"/>
+		<File RelativePath=".\FileSystem2.h"/>
+		<File RelativePath=".\FileSystem2\ff_filemapping2.h"/>
+		<File RelativePath=".\FileSystem2\ff_modulefilesystem2.h"/>
+	</Files>
+</VisualStudioProject>

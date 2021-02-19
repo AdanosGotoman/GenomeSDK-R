@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="base">
+      <UniqueIdentifier>{c1ba0042-8db5-4d0b-8d13-40470d271892}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="interface">
+      <UniqueIdentifier>{e6e7b141-94df-4af8-907f-9edd22485698}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thread">
+      <UniqueIdentifier>{9760f9da-76d2-442b-b8b6-ad1408d442f3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="FFCore\ff_def.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="FFCore\ff_enum.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="FFCore\ff_struct.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="FFCore\ff_system.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="FFCore\ff_types.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="FFCore\ff_unknown.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="FFCore\ff_criticalsection.h">
+      <Filter>thread</Filter>
+    </ClInclude>
+    <ClInclude Include="FFCore\ff_iocompletionport.h">
+      <Filter>thread</Filter>
+    </ClInclude>
+    <ClInclude Include="FFCore\ff_thread.h">
+      <Filter>thread</Filter>
+    </ClInclude>
+    <ClInclude Include="FFCore.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FFCore\ff_unknown.inl">
+      <Filter>interface</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="FFCore.cpp" />
+  </ItemGroup>
+</Project>

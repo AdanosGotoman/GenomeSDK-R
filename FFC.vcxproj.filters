@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="io">
+      <UniqueIdentifier>{106f8680-566b-43e7-b07d-a0119f4e9645}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="io\physical">
+      <UniqueIdentifier>{b4fe0c5b-6b15-4df1-9ac2-b0ff2a6ad8f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="io\virtual">
+      <UniqueIdentifier>{bd539da1-96f7-4358-a161-fb2ac7951445}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="loc">
+      <UniqueIdentifier>{b34dcf61-12dc-4e88-9782-64025099cca1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="FFC\fx_physicalfile.h">
+      <Filter>io\physical</Filter>
+    </ClInclude>
+    <ClInclude Include="FFC\fx_physicalfilefind.h">
+      <Filter>io\physical</Filter>
+    </ClInclude>
+    <ClInclude Include="FFC\fx_physicalfilemapping.h">
+      <Filter>io\physical</Filter>
+    </ClInclude>
+    <ClInclude Include="FFC\fx_physicalfilestream.h">
+      <Filter>io\physical</Filter>
+    </ClInclude>
+    <ClInclude Include="FFC\fx_physicalfilesystem.h">
+      <Filter>io\physical</Filter>
+    </ClInclude>
+    <ClInclude Include="FFC\fx_virtualfile.h">
+      <Filter>io\virtual</Filter>
+    </ClInclude>
+    <ClInclude Include="FFC\fx_virtualfilemapping.h">
+      <Filter>io\virtual</Filter>
+    </ClInclude>
+    <ClInclude Include="FFC\fx_virtualfilestream.h">
+      <Filter>io\virtual</Filter>
+    </ClInclude>
+    <ClInclude Include="FFC\fx_iostatistics.h">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="FFC\fx_iostream.h">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="FFC\fx_locstring.h">
+      <Filter>loc</Filter>
+    </ClInclude>
+    <ClInclude Include="FFC\fx_locstringex.h">
+      <Filter>loc</Filter>
+    </ClInclude>
+    <ClInclude Include="FFC\fx_loctable.h">
+      <Filter>loc</Filter>
+    </ClInclude>
+    <ClInclude Include="FFC\fx_table.h">
+      <Filter>loc</Filter>
+    </ClInclude>
+    <ClInclude Include="FFC\fx_tablecolumn.h">
+      <Filter>loc</Filter>
+    </ClInclude>
+    <ClInclude Include="FFC\fx_tablediff.h">
+      <Filter>loc</Filter>
+    </ClInclude>
+    <ClInclude Include="FFC\fx_tableitem.h">
+      <Filter>loc</Filter>
+    </ClInclude>
+    <ClInclude Include="FFC\fx_tableitemproxy.h">
+      <Filter>loc</Filter>
+    </ClInclude>
+    <ClInclude Include="FFC\fx_tablemap.h">
+      <Filter>loc</Filter>
+    </ClInclude>
+    <ClInclude Include="FFC\fx_tablemapitem.h">
+      <Filter>loc</Filter>
+    </ClInclude>
+    <ClInclude Include="FFC.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="FFC.cpp" />
+  </ItemGroup>
+</Project>

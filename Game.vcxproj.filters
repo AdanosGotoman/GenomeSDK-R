@@ -1,0 +1,694 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="combat">
+      <UniqueIdentifier>{4042688f-3149-4315-9612-d9db0bff590e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="craft">
+      <UniqueIdentifier>{763f985f-a95d-4558-9383-e7f343c11354}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="effect">
+      <UniqueIdentifier>{0c69325a-6057-497f-89f0-19df64d04d9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="effect\command">
+      <UniqueIdentifier>{3c914714-30a9-46f8-863a-5a64bd69bd95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="info">
+      <UniqueIdentifier>{2024f05c-7b8f-45f8-b713-268a24a6fae0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="info\command">
+      <UniqueIdentifier>{a318d3d7-e66a-4b75-bc06-6ae23f8aa235}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="info\command\script">
+      <UniqueIdentifier>{cbb436c9-9266-4d24-ae83-d2146fb09bd6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="info\condition">
+      <UniqueIdentifier>{dccba18c-a1a7-471a-a686-da3bfc33d66e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="input">
+      <UniqueIdentifier>{fd1f546e-a968-4876-b3a2-208a4c8a5c01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="interaction">
+      <UniqueIdentifier>{68ccaaf8-9fe9-466c-a495-5e71ab442e23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inventory">
+      <UniqueIdentifier>{19ccbfcf-3b8e-4f95-947b-ceca309f615c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="navigation">
+      <UniqueIdentifier>{de0ef5fa-2871-47c6-80e0-58e2270ed15a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="party">
+      <UniqueIdentifier>{ef75b533-0ffb-4065-bd35-00c43d48bd6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="projectile">
+      <UniqueIdentifier>{e4a2c7df-ad1e-44fe-8a0c-95c2de2c957c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="quest">
+      <UniqueIdentifier>{f0089ee3-a378-49bc-bbd0-54e132906015}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="script">
+      <UniqueIdentifier>{829896b2-5b06-45fd-8126-4c11b6d89b0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="skill">
+      <UniqueIdentifier>{aa0eab86-2d75-4f05-b545-d495a977b796}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="stategraph">
+      <UniqueIdentifier>{1bfde25a-72bd-4d86-8625-9efb15ac0c19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="stategraph\action">
+      <UniqueIdentifier>{0c0b2ed0-d3ee-4f38-83bb-56cfa2fbdcd1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="stategraph\filter">
+      <UniqueIdentifier>{dec954ba-3c8a-4d99-86a7-984f96635b8a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Game\ge_combatadmin.h">
+      <Filter>combat</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_combatai.h">
+      <Filter>combat</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_combataimelee.h">
+      <Filter>combat</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_combatairanged.h">
+      <Filter>combat</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_combatmove.h">
+      <Filter>combat</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_combatmoveaim.h">
+      <Filter>combat</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_combatmovecomboswitch.h">
+      <Filter>combat</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_combatmovefinishing.h">
+      <Filter>combat</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_combatmovemelee.h">
+      <Filter>combat</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_combatmoveoverlaystumble.h">
+      <Filter>combat</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_combatmoveparade.h">
+      <Filter>combat</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_combatmovereload.h">
+      <Filter>combat</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_combatmovescriptstate.h">
+      <Filter>combat</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_combatmoveshoot.h">
+      <Filter>combat</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_combatmovestumble.h">
+      <Filter>combat</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_combatobject.h">
+      <Filter>combat</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_combatspecies.h">
+      <Filter>combat</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_combatstyle.h">
+      <Filter>combat</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_combatstyleanipose.h">
+      <Filter>combat</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_combatstylemelee.h">
+      <Filter>combat</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_combatstyleranged.h">
+      <Filter>combat</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_combatstyleweaponconfig.h">
+      <Filter>combat</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_combatsystem_ps.h">
+      <Filter>combat</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_combatweaponconfig.h">
+      <Filter>combat</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_craftingredient.h">
+      <Filter>craft</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_recipe_ps.h">
+      <Filter>craft</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_effectcommand.h">
+      <Filter>effect\command</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_effectcommandearthquake.h">
+      <Filter>effect\command</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_effectcommandentity.h">
+      <Filter>effect\command</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_effectcommandkillentity.h">
+      <Filter>effect\command</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_effectcommandkillentityrange.h">
+      <Filter>effect\command</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_effectcommandmodifyentity.h">
+      <Filter>effect\command</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_effectcommandplaysound.h">
+      <Filter>effect\command</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_effectcommandplayvoice.h">
+      <Filter>effect\command</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_effectcommandrunscript.h">
+      <Filter>effect\command</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_effectcommandsaysvm.h">
+      <Filter>effect\command</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_effectcommandsequence2.h">
+      <Filter>effect\command</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_effectcommandspawnentity.h">
+      <Filter>effect\command</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_effectcommandspawnentitylist.h">
+      <Filter>effect\command</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_effectcommandspawnentityswitch.h">
+      <Filter>effect\command</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_effectcommandstartimageeffect.h">
+      <Filter>effect\command</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_effectcommandtriggerentity.h">
+      <Filter>effect\command</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_effect.h">
+      <Filter>effect</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_effect_ps.h">
+      <Filter>effect</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_effectmodule.h">
+      <Filter>effect</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_effectsystem.h">
+      <Filter>effect</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_infocommandattack.h">
+      <Filter>info\command\script</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_infocommanddotrade.h">
+      <Filter>info\command\script</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_infocommandheal.h">
+      <Filter>info\command\script</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_infocommandinfowait.h">
+      <Filter>info\command\script</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_infocommandpickpocket.h">
+      <Filter>info\command\script</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_infocommandrunaiscript.h">
+      <Filter>info\command\script</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_infocommandsay.h">
+      <Filter>info\command\script</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_infocommandsayconfirm.h">
+      <Filter>info\command\script</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_infocommandsayholdingposition.h">
+      <Filter>info\command\script</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_infocommandsaykeepitup.h">
+      <Filter>info\command\script</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_infocommandsaysound.h">
+      <Filter>info\command\script</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_infocommandsaysvm.h">
+      <Filter>info\command\script</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_infocommandsetsectorstatus.h">
+      <Filter>info\command\script</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_infocommandsleep.h">
+      <Filter>info\command\script</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_infocommandthink.h">
+      <Filter>info\command\script</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_infocommanduse.h">
+      <Filter>info\command\script</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_infocommand.h">
+      <Filter>info\command</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_infocommandaddinfosystemendscript.h">
+      <Filter>info\command</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_infocommandaddlogtext.h">
+      <Filter>info\command</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_infocommandaddnpcinfo.h">
+      <Filter>info\command</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_infocommandaddquestactor.h">
+      <Filter>info\command</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_infocommandback.h">
+      <Filter>info\command</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_infocommandboostattribs.h">
+      <Filter>info\command</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_infocommandcleargameevent.h">
+      <Filter>info\command</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_infocommandclosequest.h">
+      <Filter>info\command</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_infocommandcreateitem.h">
+      <Filter>info\command</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_infocommanddescription.h">
+      <Filter>info\command</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_infocommanddestroyitem.h">
+      <Filter>info\command</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_infocommanddoloot.h">
+      <Filter>info\command</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_infocommandend.h">
+      <Filter>info\command</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_infocommandendgame.h">
+      <Filter>info\command</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_infocommandfullstop.h">
+      <Filter>info\command</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_infocommandgive.h">
+      <Filter>info\command</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_infocommandgivexp.h">
+      <Filter>info\command</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_infocommandkillnpc.h">
+      <Filter>info\command</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_infocommandmoveto.h">
+      <Filter>info\command</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_infocommandplaymusic.h">
+      <Filter>info\command</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_infocommandremovenpc.h">
+      <Filter>info\command</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_infocommandremovenpcinfo.h">
+      <Filter>info\command</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_infocommandremovequestactor.h">
+      <Filter>info\command</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_infocommandruninfo.h">
+      <Filter>info\command</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_infocommandrunquest.h">
+      <Filter>info\command</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_infocommandrunscript.h">
+      <Filter>info\command</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_infocommandsetgameevent.h">
+      <Filter>info\command</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_infocommandsetguardstatus.h">
+      <Filter>info\command</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_infocommandsetmobenabled.h">
+      <Filter>info\command</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_infocommandsetpartyenabled.h">
+      <Filter>info\command</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_infocommandsetrelaxingpoint.h">
+      <Filter>info\command</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_infocommandsetroutine.h">
+      <Filter>info\command</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_infocommandsetslaveryenabled.h">
+      <Filter>info\command</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_infocommandsetsleepingpoint.h">
+      <Filter>info\command</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_infocommandsetteachenabled.h">
+      <Filter>info\command</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_infocommandsettradeenabled.h">
+      <Filter>info\command</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_infocommandsetworkingpoint.h">
+      <Filter>info\command</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_infocommandshowpicture.h">
+      <Filter>info\command</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_infocommandshowsubtitle.h">
+      <Filter>info\command</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_infocommandstarteffect.h">
+      <Filter>info\command</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_infocommandstartfixcamera.h">
+      <Filter>info\command</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_infocommandstarttutorial.h">
+      <Filter>info\command</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_infocommandstopfixcamera.h">
+      <Filter>info\command</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_infocommandsucceedquest.h">
+      <Filter>info\command</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_infocommandteach.h">
+      <Filter>info\command</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_infocommandteleportnpc.h">
+      <Filter>info\command</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_infocommandtrigger.h">
+      <Filter>info\command</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_infocommandwear.h">
+      <Filter>info\command</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_infocondition.h">
+      <Filter>info\condition</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_infoconditioncanteachskill.h">
+      <Filter>info\condition</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_infoconditionitemamount.h">
+      <Filter>info\condition</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_infoconditionnpcstatus.h">
+      <Filter>info\condition</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_infoconditionownerinarea.h">
+      <Filter>info\condition</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_infoconditionownernearentity.h">
+      <Filter>info\condition</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_infoconditionplayerknows.h">
+      <Filter>info\condition</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_infoconditionplayernotknows.h">
+      <Filter>info\condition</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_infoconditionqueststatus.h">
+      <Filter>info\condition</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_infoconditionscript.h">
+      <Filter>info\condition</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_infoconditionskillvalue.h">
+      <Filter>info\condition</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_infoconditionteachenabled.h">
+      <Filter>info\condition</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_info.h">
+      <Filter>info</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_infolocstring.h">
+      <Filter>info</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_infomodule.h">
+      <Filter>info</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_infosystem.h">
+      <Filter>info</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_npcinfolocstring.h">
+      <Filter>info</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_runtimeinfo.h">
+      <Filter>info</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_actionadmin.h">
+      <Filter>input</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_interaction.h">
+      <Filter>interaction</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_interaction_ps.h">
+      <Filter>interaction</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_interactionadmin.h">
+      <Filter>interaction</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_interactionslot.h">
+      <Filter>interaction</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_inventory_ps.h">
+      <Filter>inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_inventorylistener.h">
+      <Filter>inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_inventoryslot.h">
+      <Filter>inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_inventorystack.h">
+      <Filter>inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_item_ps.h">
+      <Filter>inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_collisioncircle_ps.h">
+      <Filter>navigation</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_collisioncircle_psobj.h">
+      <Filter>navigation</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_dynamiccollisioncircle_ps.h">
+      <Filter>navigation</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_navigation_ps.h">
+      <Filter>navigation</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_navpath_ps.h">
+      <Filter>navigation</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_navzone_ps.h">
+      <Filter>navigation</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_negzone_ps.h">
+      <Filter>navigation</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_negzone_psobj.h">
+      <Filter>navigation</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_prefpath_ps.h">
+      <Filter>navigation</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_prefpath_psobj.h">
+      <Filter>navigation</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_party_ps.h">
+      <Filter>party</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_partyadmin.h">
+      <Filter>party</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_flightpathballistic.h">
+      <Filter>projectile</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_flightpathbase.h">
+      <Filter>projectile</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_flightpathseeking.h">
+      <Filter>projectile</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_projectile2_ps.h">
+      <Filter>projectile</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_quest.h">
+      <Filter>quest</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_questactor.h">
+      <Filter>quest</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_questlocstring.h">
+      <Filter>quest</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_questmanager.h">
+      <Filter>quest</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_scriptadmin.h">
+      <Filter>script</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_scriptargs.h">
+      <Filter>script</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_scriptinit.h">
+      <Filter>script</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_scriptprocessingunit.h">
+      <Filter>script</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_scriptproxyaicallback.h">
+      <Filter>script</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_scriptproxyaifunction.h">
+      <Filter>script</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_scriptproxyaistate.h">
+      <Filter>script</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_scriptroutine_ps.h">
+      <Filter>script</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_skillrange.h">
+      <Filter>skill</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_skills_ps.h">
+      <Filter>skill</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_skillvalue.h">
+      <Filter>skill</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_skillvaluebase.h">
+      <Filter>skill</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_stategraphaction.h">
+      <Filter>stategraph\action</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_stategraphactioncallscript.h">
+      <Filter>stategraph\action</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_stategraphactioneventdispatcher.h">
+      <Filter>stategraph\action</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_stategraphactionfollowstate.h">
+      <Filter>stategraph\action</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_stategraphactionpauseani.h">
+      <Filter>stategraph\action</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_stategraphactionplayani.h">
+      <Filter>stategraph\action</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_stategraphactionstarteffect.h">
+      <Filter>stategraph\action</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_stategraphactionstop.h">
+      <Filter>stategraph\action</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_stategraphactiontrigger.h">
+      <Filter>stategraph\action</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_stategraphactiontriggerstate.h">
+      <Filter>stategraph\action</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_stategraphactionuntrigger.h">
+      <Filter>stategraph\action</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_stategraphactionvisibility.h">
+      <Filter>stategraph\action</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_stategraphactionwait.h">
+      <Filter>stategraph\action</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_stategrapheventfilter.h">
+      <Filter>stategraph\filter</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_stategrapheventfiltercollisionshape.h">
+      <Filter>stategraph\filter</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_stategrapheventfilterdamageamount.h">
+      <Filter>stategraph\filter</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_stategrapheventfilterisentity.h">
+      <Filter>stategraph\filter</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_stategrapheventfilterisnpc.h">
+      <Filter>stategraph\filter</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_stategrapheventfilterisplayer.h">
+      <Filter>stategraph\filter</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_stategrapheventfilterscript.h">
+      <Filter>stategraph\filter</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_stategrapheventfiltertemplate.h">
+      <Filter>stategraph\filter</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_stategraph_ps.h">
+      <Filter>stategraph</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_stategraphstate.h">
+      <Filter>stategraph</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ge_stategraphtransition.h">
+      <Filter>stategraph</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="Game\ge_aizone_ps.h" />
+    <ClInclude Include="Game\ge_anchor_ps.h" />
+    <ClInclude Include="Game\ge_arena_ps.h" />
+    <ClInclude Include="Game\ge_book_ps.h" />
+    <ClInclude Include="Game\ge_castinfo_ps.h" />
+    <ClInclude Include="Game\ge_charactermovement_ps.h" />
+    <ClInclude Include="Game\ge_clock_ps.h" />
+    <ClInclude Include="Game\ge_damage_ps.h" />
+    <ClInclude Include="Game\ge_database.h" />
+    <ClInclude Include="Game\ge_dialog_ps.h" />
+    <ClInclude Include="Game\ge_door_ps.h" />
+    <ClInclude Include="Game\ge_dynamiclayer.h" />
+    <ClInclude Include="Game\ge_gameapp.h" />
+    <ClInclude Include="Game\ge_layerbase.h" />
+    <ClInclude Include="Game\ge_letter_ps.h" />
+    <ClInclude Include="Game\ge_letterlocstring.h" />
+    <ClInclude Include="Game\ge_lock_ps.h" />
+    <ClInclude Include="Game\ge_map_ps.h" />
+    <ClInclude Include="Game\ge_mapentry.h" />
+    <ClInclude Include="Game\ge_mapinfo_ps.h" />
+    <ClInclude Include="Game\ge_maplocstring.h" />
+    <ClInclude Include="Game\ge_modifyskill.h" />
+    <ClInclude Include="Game\ge_npc_ps.h" />
+    <ClInclude Include="Game\ge_project.h" />
+    <ClInclude Include="Game\ge_sector.h" />
+    <ClInclude Include="Game\ge_session.h" />
+    <ClInclude Include="Game\ge_sessioncheats.h" />
+    <ClInclude Include="Game\ge_sessioninfo.h" />
+    <ClInclude Include="Game\ge_workspace.h" />
+    <ClInclude Include="Game\ge_world.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Game\ge_scriptadmin.cpp">
+      <Filter>script</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\ge_scriptargs.cpp">
+      <Filter>script</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\ge_scriptinit.cpp">
+      <Filter>script</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

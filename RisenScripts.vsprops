@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VisualStudioPropertySheet
+	Name="Risen Script DLL - All"
+	CharacterSet="2"
+	IntermediateDirectory="..\..\..\build\$(ConfigurationName)\$(ProjectName)"
+	OutputDirectory="..\..\..\bin\scripts"
+	ProjectType="Visual C++"
+	Version="8.00"
+	>
+	<Tool
+		Name="VCCLCompilerTool"
+		AdditionalIncludeDirectories="..\..\"
+		AdditionalOptions="/Wall"
+		CallingConvention="2"
+		DebugInformationFormat="3"
+		Detect64BitPortabilityProblems="false"
+		DisableSpecificWarnings="4505;4514;4710;4711"
+		EnableEnhancedInstructionSet="2"
+		EnableFunctionLevelLinking="true"
+		MinimalRebuild="false"
+		WarningLevel="4"
+		/>
+	<Tool
+		Name="VCLinkerTool"
+		AdditionalDependencies="kernel32.lib"
+		GenerateDebugInformation="true"
+		GenerateManifest="false"
+		IgnoreImportLibrary="true"
+		TargetMachine="1"
+		/>
+</VisualStudioPropertySheet>

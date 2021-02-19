@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VisualStudioProject
+	Name="FFCore"
+	ProjectGUID="{3C763629-4C39-4507-AB6D-38B80780C857}"
+	ProjectType="Visual C++"
+	Version="8.00"
+	>
+	<Platforms>
+		<Platform Name="Win32"/>
+	</Platforms>
+	<Configurations>
+		<Configuration
+			Name="Debug|Win32"
+			ConfigurationType="4"
+			InheritedPropertySheets=".\RisenLibDebug.vsprops"
+			/>
+		<Configuration
+			Name="DebugCLR|Win32"
+			ConfigurationType="4"
+			InheritedPropertySheets=".\RisenLibDebugCLR.vsprops"
+			ManagedExtensions="1"
+			/>
+		<Configuration
+			Name="Release|Win32"
+			ConfigurationType="4"
+			InheritedPropertySheets=".\RisenLibRelease.vsprops"
+			WholeProgramOptimization="1"
+			/>
+		<Configuration
+			Name="ReleaseCLR|Win32"
+			ConfigurationType="4"
+			InheritedPropertySheets=".\RisenLibReleaseCLR.vsprops"
+			ManagedExtensions="1"
+			WholeProgramOptimization="1"
+			/>
+	</Configurations>
+	<Files>
+		<Filter Name="base">
+			<File RelativePath=".\FFCore\ff_def.h"/>
+			<File RelativePath=".\FFCore\ff_enum.h"/>
+			<File RelativePath=".\FFCore\ff_struct.h"/>
+			<File RelativePath=".\FFCore\ff_system.h"/>
+			<File RelativePath=".\FFCore\ff_types.h"/>
+		</Filter>
+		<Filter Name="interface">
+			<File RelativePath=".\FFCore\ff_unknown.h"/>
+			<File RelativePath=".\FFCore\ff_unknown.inl"/>
+		</Filter>
+		<Filter Name="thread">
+			<File RelativePath=".\FFCore\ff_criticalsection.h"/>
+			<File RelativePath=".\FFCore\ff_iocompletionport.h"/>
+			<File RelativePath=".\FFCore\ff_thread.h"/>
+		</Filter>
+		<File RelativePath=".\FFCore.cpp"/>
+		<File RelativePath=".\FFCore.h"/>
+	</Files>
+</VisualStudioProject>

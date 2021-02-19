@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VisualStudioPropertySheet
+	Name="Risen Script DLL - Release"
+	InheritedPropertySheets=".\RisenScripts.vsprops"
+	ProjectType="Visual C++"
+	Version="8.00"
+	>
+	<Tool
+		Name="VCCLCompilerTool"
+		BufferSecurityCheck="false"
+		ExceptionHandling="0"
+		Optimization="2"
+		PreprocessorDefinitions="NDEBUG"
+		RuntimeLibrary="0"
+		StringPooling="true"
+		/>
+	<Tool
+		Name="VCLinkerTool"
+		EnableCOMDATFolding="2"
+		OptimizeReferences="2"
+		SetChecksum="true"
+		/>
+</VisualStudioPropertySheet>

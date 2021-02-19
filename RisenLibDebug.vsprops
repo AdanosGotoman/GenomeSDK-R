@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VisualStudioPropertySheet
+	Name="Risen SDK Library - Debug"
+	InheritedPropertySheets=".\RisenLib.vsprops"
+	ProjectType="Visual C++"
+	Version="8.00"
+	>
+	<Tool
+		Name="VCCLCompilerTool"
+		BasicRuntimeChecks="3"
+		Optimization="0"
+		PreprocessorDefinitions="GE_DEBUG"
+		RuntimeLibrary="1"
+		/>
+</VisualStudioPropertySheet>
